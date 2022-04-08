@@ -54,7 +54,7 @@ export const wikiStyleLinksRule = {
                 return `${token['mdKeyword']}[[${realFileName}${extension}|${displayName}]]`;
             }
 
-            return  `${token['mdKeyword']}[${displayName}](${fileName}${extension})`;
+            return  `${token['mdKeyword']}[${displayName}](${realFileName}${extension})`;
 
         }
 
